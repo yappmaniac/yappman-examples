@@ -1,0 +1,19 @@
+# Anything an example collects stays on your machine
+output/
+**/output/
+*.csv
+*.parquet
+*.jsonl
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python and Jupyter
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+*.html
+.DS_Store

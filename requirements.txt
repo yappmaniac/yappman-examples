@@ -1,0 +1,6 @@
+# apify-client is pinned on purpose: the examples are written against its 3.2 API.
+apify-client==3.2.1
+pandas==3.0.6
+matplotlib==3.11.2
+folium==0.20.0
+jupyterlab==4.6.4
