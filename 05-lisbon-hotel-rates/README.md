@@ -1,4 +1,4 @@
-# 05 Lisbon hotels: vendor-rate ladder and the free index
+# 05 Lisbon vendor-rate ladder and the free tracked mode
 
 Makes two Actor runs. The first searches Lisbon for a 2-night stay 30 days out, with each hotel's per-vendor rates, and compares the ladder: who is cheapest and how wide the spread is. The second uses tracked mode to list the hotels the Actor already tracks. An optional third run reads stored history and is off by default.
 
@@ -34,7 +34,7 @@ Tracked:
 {"mode": "tracked"}
 ```
 
-History (optional, off by default). `hotels` holds at most five hotel ids taken from the tracked index, and the dates are one of its stays.
+History (optional, off by default). `hotels` holds at most five hotel ids taken from the tracked list, and the dates are one of its stays.
 
 ```json
 {
@@ -59,11 +59,11 @@ The runs pass `max_total_charge_usd` of 0.08 (search), 0.01 (tracked) and 0.06 (
 
 Search plus tracked is at most $0.0775. History adds at most $0.055.
 
-## The free index
+## The free tracked mode
 
-"The free index" means tracked mode. It charges no Actor events, only the $0.005 start. It lists the hotel ids and stay dates the Actor snapshots weekly. The list is written to the `TRACKED_HOTELS` record of the run's key-value store, not to the dataset. Each tracked city has two stays a week, 14 and 42 days out, for 2 adults and 2 nights.
+Tracked mode charges no Actor events, only the $0.005 start. It lists the hotel ids and stay dates the Actor snapshots weekly. The list is written to the `TRACKED_HOTELS` record of the run's key-value store, not to the dataset. Each tracked city has two stays a week, 14 and 42 days out, for 2 adults and 2 nights.
 
-The notebook filters the index to destinations containing "Lisbon", counts the distinct Lisbon hotels, and marks which searched hotels have weekly history.
+The notebook filters the tracked list to destinations containing "Lisbon", counts the distinct Lisbon hotels, and marks which searched hotels have weekly history.
 
 ## How the analysis works
 
@@ -80,7 +80,7 @@ The notebook filters the index to destinations containing "Lisbon", counts the d
 |---|---|
 | `output/lisbon_vendor_ladder.csv` | One row per hotel and vendor with rank |
 
-The spread table, tracked index and chart are shown inline only.
+The spread table, tracked list and chart are shown inline only.
 
 ## Caveats
 

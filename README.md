@@ -10,7 +10,7 @@ Worked examples, written as Python notebooks, for yappman's Apify Actors. Each n
 | [02-uk-basket-price-history](02-uk-basket-price-history) | Builds a 30-day price history and a chained index from the free daily basket dataset | None (public dataset) | $0.00 |
 | [03-au-coles-woolworths-special-buys](03-au-coles-woolworths-special-buys) | Compares Coles and Woolworths on `matchKey` and lists this week's Aldi Special Buys | Australia Supermarket Prices | $0.25 |
 | [04-leeds-property-planning-map](04-leeds-property-planning-map) | Maps Leeds listings coloured by planning constraints and nearby applications | UK Property Listings + Planning | $0.365 |
-| [05-lisbon-hotel-rates](05-lisbon-hotel-rates) | Compares vendor rates for Lisbon hotels and reads the free tracked-hotel index | Google Hotels Prices | $0.0775 (plus $0.055 optional history, off by default) |
+| [05-lisbon-hotel-rates](05-lisbon-hotel-rates) | Compares vendor rates for Lisbon hotels and reads the hotels the Actor tracks, using the free tracked mode | Google Hotels Prices | $0.0775 (plus $0.055 optional history, off by default) |
 
 All five together cost about $0.95 at most. Apify's Free plan includes monthly platform credit that covers this.
 
