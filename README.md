@@ -1,6 +1,6 @@
 # yappman examples
 
-Worked examples, written as Python notebooks, for yappman's Apify Actors. Each notebook runs an Actor (or reads a public dataset), analyses the result with pandas, and writes its output to a local `output/` folder. Every paid run has a hard spend cap.
+Worked examples, written as Python notebooks, for yappman's Apify Actors. Each notebook runs an Actor (or reads a public dataset) and analyses the result with pandas. Examples 01 to 05 write their output to a local `output/` folder. Examples 06 and 08 show their results in the notebook only. Every paid run has a hard spend cap.
 
 ## Examples
 
@@ -11,8 +11,10 @@ Worked examples, written as Python notebooks, for yappman's Apify Actors. Each n
 | [03-au-coles-woolworths-special-buys](03-au-coles-woolworths-special-buys) | Compares Coles and Woolworths on `matchKey` and lists this week's Aldi Special Buys | Australia Supermarket Prices | $0.25 |
 | [04-leeds-property-planning-map](04-leeds-property-planning-map) | Maps Leeds listings coloured by planning constraints and nearby applications | UK Property Listings + Planning | $0.365 |
 | [05-lisbon-hotel-rates](05-lisbon-hotel-rates) | Compares vendor rates for Lisbon hotels and reads the hotels the Actor tracks, using the free tracked mode | Google Hotels Prices | $0.0775 (plus $0.055 optional history, off by default) |
+| [06-uk-public-contracts](06-uk-public-contracts) | Lists the newest UK public procurement notices from Find a Tender and Contracts Finder, then reads the run summary | UK Public Contracts Lookup | $0.105 |
+| [08-lei-lookup](08-lei-lookup) | Looks up one Legal Entity Identifier in the Global LEI Index | LEI Lookup | $0.004 |
 
-All five together cost about $0.95 at most. Apify's Free plan includes monthly platform credit that covers this.
+All seven together cost about $1.06 at most. Apify's Free plan includes monthly platform credit that covers this.
 
 ## Actors and data
 
@@ -22,6 +24,8 @@ All five together cost about $0.95 at most. Apify's Free plan includes monthly p
 | Australia Supermarket Prices | https://apify.com/yappman/au-supermarket-price-scraper |
 | UK Property Listings + Planning | https://apify.com/yappman/uk-property-listings |
 | Google Hotels Prices | https://apify.com/yappman/google-hotels-prices |
+| UK Public Contracts Lookup | https://apify.com/yappman/contracts-lookup |
+| LEI Lookup | https://apify.com/yappman/lei-lookup |
 
 Bulk history and weekly catalogues: https://data.yappman.com. The Shelf-Price Index: https://data.yappman.com/shelf-price-index.
 
@@ -53,10 +57,10 @@ jupyter lab
 
 ## How spend is capped
 
-Every paid run does two things:
+Every paid run is capped in two ways:
 
-- Sets `maxItems` in the Actor input.
-- Passes `max_total_charge_usd` to apify-client's `call()`.
+- Examples 01, 03, 04, 05 and 06 set `maxItems` in the Actor input. Example 08 has no `maxItems` in the mode it uses, so the length of the input list is the cap.
+- Every call passes `max_total_charge_usd` to apify-client's `call()`. Examples 06 and 08 also set a 10-minute run timeout.
 
 The Actors use pay-per-event pricing, so they charge only their own events (for example a start fee and a price per row). Platform compute is not billed on top.
 
@@ -70,7 +74,7 @@ Prices quoted in these READMEs are Free-tier event prices as of October 2026. Pa
 - No collected data.
 - No retailer or portal logos.
 
-Notebooks are committed without outputs. Everything a notebook collects is written to `output/`, which git ignores. Run `python scripts/check_repo.py` before committing. CI runs it too.
+Notebooks are committed without outputs. Examples 01 to 05 write what they collect to `output/`, which git ignores. Examples 06 and 08 keep it in the notebook only. Run `python scripts/check_repo.py` before committing. CI runs it too.
 
 ## Upcoming Actor changes
 
