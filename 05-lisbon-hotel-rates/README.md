@@ -1,4 +1,4 @@
-# 05 Lisbon vendor-rate ladder and the free tracked mode
+# 05 Lisbon vendor-rate ladder and tracked mode
 
 Makes two Actor runs. The first searches Lisbon for a 2-night stay 30 days out, with each hotel's per-vendor rates, and compares the ladder: who is cheapest and how wide the spread is. The second uses tracked mode to list the hotels the Actor already tracks. An optional third run reads stored history and is off by default.
 
@@ -58,7 +58,7 @@ The runs pass `max_total_charge_usd` of 0.08 (search), 0.01 (tracked) and 0.06 (
 
 Search plus tracked is at most $0.0775. History adds at most $0.055.
 
-## The free tracked mode
+## Tracked mode
 
 Tracked mode charges no Actor events, only the $0.005 start. It lists the hotel ids and stay dates the Actor snapshots (intended weekly). The list is written to the `TRACKED_HOTELS` record of the run's key-value store, not to the dataset. Each tracked city has two stays a week, 14 and 42 days out, for 2 adults and 2 nights.
 
