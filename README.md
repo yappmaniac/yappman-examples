@@ -7,7 +7,7 @@ Worked examples, written as Python notebooks, for yappman's Apify Actors. Each n
 | Folder | What it does | Actor(s) | Most it costs per run (Free tier) |
 |---|---|---|---|
 | [01-uk-grocery-cheapest](01-uk-grocery-cheapest) | Finds the cheapest effective price for each product across Tesco, Sainsbury's, Asda, Aldi and Morrisons | UK Grocery Prices | $0.255 |
-| [02-uk-basket-price-history](02-uk-basket-price-history) | Builds a 30-day price history and a chained index from the free daily basket dataset | None (public dataset) | $0.00 |
+| [02-uk-basket-price-history](02-uk-basket-price-history) | Builds a 30-day price history and a chained index from the free basket dataset (intended daily; gaps are listed) | None (public dataset) | $0.00 |
 | [03-au-coles-woolworths-special-buys](03-au-coles-woolworths-special-buys) | Compares Coles and Woolworths on `matchKey` and lists this week's Aldi Special Buys | Australia Supermarket Prices | $0.25 |
 | [04-leeds-property-planning-map](04-leeds-property-planning-map) | Maps Leeds listings coloured by planning constraints and nearby applications | UK Property Listings + Planning | $0.365 |
 | [05-lisbon-hotel-rates](05-lisbon-hotel-rates) | Compares vendor rates for Lisbon hotels and reads the hotels the Actor tracks, using the free tracked mode | Google Hotels Prices | $0.0775 (plus $0.055 optional history, off by default) |
@@ -27,7 +27,7 @@ All seven together cost about $1.06 at most. Apify's Free plan includes monthly 
 | UK Public Contracts Lookup | https://apify.com/yappman/contracts-lookup |
 | LEI Lookup | https://apify.com/yappman/lei-lookup |
 
-Bulk history and weekly catalogues: https://data.yappman.com. The Shelf-Price Index: https://data.yappman.com/shelf-price-index.
+Bulk history and intended weekly catalogues: https://data.yappman.com. The Shelf-Price Index: https://data.yappman.com/shelf-price-index.
 
 ## Setup
 

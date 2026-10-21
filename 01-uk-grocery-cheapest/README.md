@@ -52,5 +52,5 @@ Runs one search across Tesco, Sainsbury's, Asda, Aldi and Morrisons. Groups the 
 
 - Branded products give the best barcode matches. Own-label lines differ between retailers.
 - `matchKey` is a normalised name and pack size. Its format changes no earlier than 4 November 2026. Do not compare keys saved before and after that date.
-- Prices are what each retailer showed at run time. Asda stock is for one store; prices are national.
+- Prices are as each retailer's service shows them at run time: no store is chosen for Tesco and Sainsbury's; one fixed store or service point is used for Asda and Aldi.
 - Rows and prices follow the Actor's data terms, not the repository's MIT licence.

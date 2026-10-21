@@ -1,6 +1,6 @@
 # 06 UK public contracts: the newest notices
 
-Makes one Actor run: a search of Find a Tender and Contracts Finder, newest first, capped at 20 notices. Each row is one official procurement notice in one fixed schema, with no personal data. The notebook shows the rows as a table, then reads the run summary to see whether either service left days uncovered.
+Makes one Actor run: a search of Find a Tender and Contracts Finder, newest first, capped at 20 notices. Each row is one government procurement notice in one fixed schema, designed not to include individuals' details. The notebook shows the rows as a table, then reads the run summary to see whether either service left days uncovered.
 
 - Actor: [UK Public Contracts Lookup](https://apify.com/yappman/contracts-lookup) (`yappman/contracts-lookup`)
 - Data: https://data.yappman.com

@@ -1,6 +1,6 @@
 # 08 LEI lookup: one Legal Entity Identifier
 
-Makes one Actor run in LEI mode with a single LEI. Each row is one entity from the daily Golden Copy of the Global LEI Index, in one fixed schema with no personal data. The notebook shows the row as a table, then reads the run summary, which lists anything refused or not found.
+Makes one Actor run in LEI mode with a single LEI. Each row is one entity from the daily Golden Copy of the Global LEI Index, in one fixed schema designed not to include individuals' details. The notebook shows the row as a table, then reads the run summary, which lists anything refused or not found.
 
 - Actor: [LEI Lookup](https://apify.com/yappman/lei-lookup) (`yappman/lei-lookup`)
 - Data: https://data.yappman.com

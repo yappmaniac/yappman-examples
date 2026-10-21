@@ -61,9 +61,9 @@ Search plus tracked is at most $0.0775. History adds at most $0.055.
 
 ## The free tracked mode
 
-Tracked mode charges no Actor events, only the $0.005 start. It lists the hotel ids and stay dates the Actor snapshots weekly. The list is written to the `TRACKED_HOTELS` record of the run's key-value store, not to the dataset. Each tracked city has two stays a week, 14 and 42 days out, for 2 adults and 2 nights.
+Tracked mode charges no Actor events, only the $0.005 start. It lists the hotel ids and stay dates the Actor snapshots (intended weekly). The list is written to the `TRACKED_HOTELS` record of the run's key-value store, not to the dataset. Each tracked city has two stays a week, 14 and 42 days out, for 2 adults and 2 nights.
 
-The notebook filters the tracked list to destinations containing "Lisbon", counts the distinct Lisbon hotels, and marks which searched hotels have weekly history.
+The notebook filters the tracked list to destinations containing "Lisbon", counts the distinct Lisbon hotels, and marks which searched hotels have history (snapshots are intended weekly).
 
 ## How the analysis works
 
@@ -72,7 +72,7 @@ The notebook filters the tracked list to destinations containing "Lisbon", count
 - Per hotel, the spread is dearest over cheapest, as a percentage. The notebook also checks whether the lead price (`leadPrice`) equals the cheapest vendor.
 - It counts how often each vendor is cheapest. Ties count for every vendor tied.
 - It plots the ten widest spreads as a dot-and-line chart.
-- History mode returns weekly lead-price snapshots for tracked hotels. It ignores `maxItems`, so the cost is capped by sending at most five hotels and by `max_total_charge_usd`.
+- History mode returns lead-price snapshots (intended weekly) for tracked hotels. It ignores `maxItems`, so the cost is capped by sending at most five hotels and by `max_total_charge_usd`.
 
 ## Output
 
