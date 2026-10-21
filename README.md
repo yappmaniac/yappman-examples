@@ -10,11 +10,10 @@ Worked examples, written as Python notebooks, for yappman's Apify Actors. Each n
 | [02-uk-basket-price-history](02-uk-basket-price-history) | Builds a 30-day price history and a chained index from the free basket dataset (intended daily; gaps are listed) | None (public dataset) | $0.00 |
 | [03-au-coles-woolworths-special-buys](03-au-coles-woolworths-special-buys) | Compares Coles and Woolworths on `matchKey` and lists this week's Aldi Special Buys | Australia Supermarket Prices | $0.25 |
 | [04-leeds-property-planning-map](04-leeds-property-planning-map) | Maps Leeds listings coloured by planning constraints and nearby applications | UK Property Listings + Planning | $0.365 |
-| [05-lisbon-hotel-rates](05-lisbon-hotel-rates) | Compares vendor rates for Lisbon hotels and reads the hotels the Actor tracks, using the free tracked mode | Google Hotels Prices | $0.0775 (plus $0.055 optional history, off by default) |
 | [06-uk-public-contracts](06-uk-public-contracts) | Lists the newest UK public procurement notices from Find a Tender and Contracts Finder, then reads the run summary | UK Public Contracts Lookup | $0.105 |
 | [08-lei-lookup](08-lei-lookup) | Looks up one Legal Entity Identifier in the Global LEI Index | LEI Lookup | $0.004 |
 
-All seven together cost about $1.06 at most. Apify's Free plan includes monthly platform credit that covers this.
+All six listed examples together cost about $0.98 at most. Apify's Free plan includes monthly platform credit that covers this.
 
 ## Actors and data
 
@@ -23,7 +22,6 @@ All seven together cost about $1.06 at most. Apify's Free plan includes monthly 
 | UK Grocery Prices | https://apify.com/yappman/uk-supermarket-price-scraper |
 | Australia Supermarket Prices | https://apify.com/yappman/au-supermarket-price-scraper |
 | UK Property Listings + Planning | https://apify.com/yappman/uk-property-listings |
-| Google Hotels Prices | https://apify.com/yappman/google-hotels-prices |
 | UK Public Contracts Lookup | https://apify.com/yappman/contracts-lookup |
 | LEI Lookup | https://apify.com/yappman/lei-lookup |
 

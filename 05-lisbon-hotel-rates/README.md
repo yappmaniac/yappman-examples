@@ -2,7 +2,6 @@
 
 Makes two Actor runs. The first searches Lisbon for a 2-night stay 30 days out, with each hotel's per-vendor rates, and compares the ladder: who is cheapest and how wide the spread is. The second uses tracked mode to list the hotels the Actor already tracks. An optional third run reads stored history and is off by default.
 
-- Actor: [Google Hotels Prices](https://apify.com/yappman/google-hotels-prices) (`yappman/google-hotels-prices`)
 - Data: https://data.yappman.com
 
 ## How to run
