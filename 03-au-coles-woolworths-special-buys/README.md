@@ -2,7 +2,6 @@
 
 Makes two Actor runs. The first searches Coles and Woolworths and compares products one by one on `matchKey`. The second fetches Aldi's Special Buys drops dated this week (Monday to Sunday, Sydney time).
 
-- Actor: [Australia Supermarket Prices](https://apify.com/yappman/au-supermarket-price-scraper) (`yappman/au-supermarket-price-scraper`)
 - Data: https://data.yappman.com
 
 ## How to run
