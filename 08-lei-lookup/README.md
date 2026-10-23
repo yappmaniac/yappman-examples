@@ -2,7 +2,7 @@
 
 Makes one Actor run in LEI mode with a single LEI. Each row is one entity from the daily Golden Copy of the Global LEI Index, in one fixed schema designed not to include individuals' details. The notebook shows the row as a table, then reads the run summary, which lists anything refused or not found.
 
-- Actor: [LEI Lookup](https://apify.com/yappman/lei-lookup) (`yappman/lei-lookup`)
+- Actor: [LEI Lookup: Legal Entity Identifier Search by Name or Status](https://apify.com/yappman/lei-lookup) (`yappman/lei-lookup`)
 - Data: https://data.yappman.com
 
 ## How to run
@@ -25,8 +25,8 @@ The run passes `max_total_charge_usd=0.005` and a run timeout of 10 minutes.
 
 | Event | Count | Unit price | Most |
 |---|---|---|---|
-| Entity returned | 1 | $0.004 | $0.004 |
-| Total | | | $0.004 |
+| Entity returned | 1 | $0.001 | $0.001 |
+| Total | | | $0.001 |
 
 There is no start fee. An LEI that is invalid or not found costs nothing. In LEI mode the list of LEIs (1 to 1,000) is the cap, because `maxItems` applies only to name and status searches.
 

@@ -1,8 +1,8 @@
 # 02 UK basket: 30-day price history
 
-Reads the free basket dataset `ynAT9NPps2EdjMOJa`, published by the UK Grocery Prices Actor. It holds the same 212 staple products from four retailers, priced (intended daily; gaps are listed). The notebook builds a per-product price history for the last 30 days and a simple chained index for each retailer.
+Reads the free basket dataset `ynAT9NPps2EdjMOJa`, published by the Actor UK Grocery Prices: Tesco, Sainsbury's, Asda, Aldi. It holds the same 212 staple products from four retailers, priced (intended daily; gaps are listed). The notebook builds a per-product price history for the last 30 days and a simple chained index for each retailer.
 
-- Actor: [UK Grocery Prices](https://apify.com/yappman/uk-supermarket-price-scraper) (publishes the dataset; this notebook does not run it)
+- Actor: [UK Grocery Prices: Tesco, Sainsbury's, Asda, Aldi](https://apify.com/yappman/uk-supermarket-price-scraper) (publishes the dataset; this notebook does not run it)
 - Data: https://data.yappman.com
 - Free sample: [Kaggle, CC BY 4.0](https://www.kaggle.com/datasets/russellyapp/uk-supermarket-prices-daily-212-item-basket), refreshed by hand roughly monthly
 

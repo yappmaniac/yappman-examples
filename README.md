@@ -6,12 +6,12 @@ Worked examples, written as Python notebooks, for yappman's Apify Actors. Each n
 
 | Folder | What it does | Actor(s) | Most it costs per run (Free tier) |
 |---|---|---|---|
-| [01-uk-grocery-cheapest](01-uk-grocery-cheapest) | Finds the cheapest effective price for each product across Tesco, Sainsbury's, Asda, Aldi and Morrisons | UK Grocery Prices | $0.255 |
+| [01-uk-grocery-cheapest](01-uk-grocery-cheapest) | Finds the cheapest effective price for each product across Tesco, Sainsbury's, Asda, Aldi and Morrisons (opt-in) | UK Grocery Prices: Tesco, Sainsbury's, Asda, Aldi | $0.255 |
 | [02-uk-basket-price-history](02-uk-basket-price-history) | Builds a 30-day price history and a chained index from the free basket dataset (intended daily; gaps are listed) | None (public dataset) | $0.00 |
 | [03-au-coles-woolworths-special-buys](03-au-coles-woolworths-special-buys) | Compares Coles and Woolworths on `matchKey` and lists this week's Aldi Special Buys | Australia Supermarket Prices | $0.25 |
 | [04-leeds-property-planning-map](04-leeds-property-planning-map) | Maps Leeds listings coloured by planning constraints and nearby applications | UK Property Listings + Planning | $0.365 |
-| [06-uk-public-contracts](06-uk-public-contracts) | Lists the newest UK public procurement notices from Find a Tender and Contracts Finder, then reads the run summary | UK Public Contracts Lookup | $0.105 |
-| [08-lei-lookup](08-lei-lookup) | Looks up one Legal Entity Identifier in the Global LEI Index | LEI Lookup | $0.004 |
+| [06-uk-public-contracts](06-uk-public-contracts) | Lists the newest UK public procurement notices from Find a Tender and Contracts Finder, then reads the run summary | UK Contracts Finder and Find a Tender Scraper: Gov Contracts | $0.105 |
+| [08-lei-lookup](08-lei-lookup) | Looks up one Legal Entity Identifier in the Global LEI Index | LEI Lookup: Legal Entity Identifier Search by Name or Status | $0.001 |
 
 All six listed examples together cost about $0.98 at most. Apify's Free plan includes monthly platform credit that covers this.
 
@@ -19,11 +19,11 @@ All six listed examples together cost about $0.98 at most. Apify's Free plan inc
 
 | Actor | Store page |
 |---|---|
-| UK Grocery Prices | https://apify.com/yappman/uk-supermarket-price-scraper |
+| UK Grocery Prices: Tesco, Sainsbury's, Asda, Aldi | https://apify.com/yappman/uk-supermarket-price-scraper |
 | Australia Supermarket Prices | https://apify.com/yappman/au-supermarket-price-scraper |
 | UK Property Listings + Planning | https://apify.com/yappman/uk-property-listings |
-| UK Public Contracts Lookup | https://apify.com/yappman/contracts-lookup |
-| LEI Lookup | https://apify.com/yappman/lei-lookup |
+| UK Contracts Finder and Find a Tender Scraper: Gov Contracts | https://apify.com/yappman/contracts-lookup |
+| LEI Lookup: Legal Entity Identifier Search by Name or Status | https://apify.com/yappman/lei-lookup |
 
 Bulk history and intended weekly catalogues: https://data.yappman.com. The Shelf-Price Index: https://data.yappman.com/shelf-price-index.
 

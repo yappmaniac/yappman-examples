@@ -1,8 +1,8 @@
 # 01 UK grocery: cheapest effective price
 
-Runs one search across Tesco, Sainsbury's, Asda, Aldi and Morrisons. Groups the rows into products by barcode (EAN), with `matchKey` as the fallback. Reports the cheapest effective price for each product and the saving against the dearest retailer.
+Runs one search across Tesco, Sainsbury's, Asda, Aldi and Morrisons. Morrisons is opt-in in the Actor; this example selects it. Groups the rows into products by barcode (EAN), with `matchKey` as the fallback. Reports the cheapest effective price for each product and the saving against the dearest retailer.
 
-- Actor: [UK Grocery Prices](https://apify.com/yappman/uk-supermarket-price-scraper) (`yappman/uk-supermarket-price-scraper`)
+- Actor: [UK Grocery Prices: Tesco, Sainsbury's, Asda, Aldi](https://apify.com/yappman/uk-supermarket-price-scraper) (`yappman/uk-supermarket-price-scraper`)
 - Data: https://data.yappman.com
 
 ## How to run
