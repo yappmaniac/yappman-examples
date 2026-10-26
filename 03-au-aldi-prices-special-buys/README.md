@@ -1,6 +1,6 @@
 # 03 Australia: Aldi shelf prices and Special Buys
 
-Makes two Actor runs. The first searches Aldi Australia for one keyword and sorts the products by unit price. The second fetches Aldi's Special Buys drops dated this week (Monday to Sunday, Sydney time). Coles and Woolworths rows are read only on runs started by the Actor owner's account (from version 0.1.15), so this example runs Aldi only.
+Makes two Actor runs. The first searches Aldi Australia for one keyword and sorts the products by unit price. The second fetches Aldi's Special Buys drops dated this week (Monday to Sunday, Sydney time). Coles and Woolworths are not available at the moment. Their rows are read only on runs started by the Actor owner's account (from version 0.1.15), so this example runs Aldi only.
 
 - Actor: [Aldi Australia Price Scraper: Shelf Prices & Special Buys](https://apify.com/yappman/au-supermarket-price-scraper) (`yappman/au-supermarket-price-scraper`)
 - Data: https://data.yappman.com
@@ -61,5 +61,5 @@ The search run passes `max_total_charge_usd=0.03` and the Special Buys run passe
 ## Caveats
 
 - Aldi publishes no barcode, so Aldi rows have an empty `ean` and this example does not match products across shops.
-- Coles and Woolworths are read only on runs started by the Actor owner's account. On other accounts those shops are skipped.
+- Coles and Woolworths are not available at the moment. They are read only on runs started by the Actor owner's account. On other accounts those shops are skipped.
 - Rows follow the Actor's data terms, not the repository's MIT licence.

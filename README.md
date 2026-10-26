@@ -58,7 +58,7 @@ jupyter lab
 Every paid run is capped in two ways:
 
 - Examples 01, 03, 04, 05 and 06 set `maxItems` in the Actor input. Example 08 has no `maxItems` in the mode it uses, so the length of the input list is the cap.
-- Every call passes `max_total_charge_usd` to apify-client's `call()`. Examples 06 and 08 also set a 10-minute run timeout.
+- Every call passes `max_total_charge_usd` to apify-client's `call()`. Examples 03, 06 and 08 also set a 10-minute run timeout.
 
 The Actors use pay-per-event pricing, so they charge only their own events (for example a start fee and a price per row). Platform compute is not billed on top.
 
