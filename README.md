@@ -78,7 +78,7 @@ Prices quoted in these READMEs are Free-tier event prices as of October 2026. Pa
 - No collected data.
 - No retailer or portal logos.
 
-Notebooks are committed without outputs. Examples 01 to 05 and 12 write what they collect to `output/`, which git ignores. Examples 06 and 08 keep it in the notebook only. Run `python scripts/check_repo.py` before committing. CI runs it too.
+Notebooks are committed without outputs. Examples 01 to 05, 09 and 12 write what they collect to `output/`, which git ignores. Examples 06 and 08 keep it in the notebook only. Run `python scripts/check_repo.py` before committing. CI runs it too.
 
 ## Upcoming Actor changes
 
