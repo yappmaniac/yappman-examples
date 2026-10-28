@@ -1,6 +1,6 @@
 # yappman examples
 
-Worked examples, written as Python notebooks, for yappman's Apify Actors. Each notebook runs an Actor (or reads a public dataset) and analyses the result with pandas. Examples 01 to 05 write their output to a local `output/` folder. Examples 06 and 08 show their results in the notebook only. Every paid run has a hard spend cap.
+Worked examples, written as Python notebooks, for yappman's Apify Actors. Each notebook runs an Actor (or reads a public dataset) and analyses the result with pandas. Examples 01 to 05 and 09 write their output to a local `output/` folder. Examples 06 and 08 show their results in the notebook only. Every paid run has a hard spend cap.
 
 ## Examples
 
@@ -13,8 +13,9 @@ Worked examples, written as Python notebooks, for yappman's Apify Actors. Each n
 | [05-lisbon-hotel-rates](05-lisbon-hotel-rates) | Compares vendor rates for Lisbon hotels and reads the hotels the Actor tracks, using tracked mode | Hotel Prices from Google Hotels: Vendor Rates, History | $0.0775 (plus $0.055 optional history, off by default) |
 | [06-uk-public-contracts](06-uk-public-contracts) | Lists the newest UK public procurement notices from Find a Tender and Contracts Finder, then reads the run summary | UK Contracts Finder and Find a Tender Scraper: Gov Contracts | $0.105 |
 | [08-lei-lookup](08-lei-lookup) | Looks up one Legal Entity Identifier in the Global LEI Index | LEI Lookup: Legal Entity Identifier Search by Name or Status | $0.001 |
+| [09-hotel-price-history](09-hotel-price-history) | Reads the stored lead-price snapshots for Lisbon hotels and plots price per night over time | Hotel Prices from Google Hotels: Vendor Rates, History | $0.06 |
 
-All seven listed examples together cost about $0.88 at most. Apify's Free plan includes monthly platform credit that covers this.
+All eight listed examples together cost about $0.94 at most. Apify's Free plan includes monthly platform credit that covers this.
 
 ## Actors and data
 
@@ -61,7 +62,7 @@ jupyter lab
 Every paid run is capped in two ways:
 
 - Examples 01, 03, 04, 05 and 06 set `maxItems` in the Actor input. Example 08 has no `maxItems` in the mode it uses, so the length of the input list is the cap.
-- Every call passes `max_total_charge_usd` to apify-client's `call()`. Examples 03, 06 and 08 also set a 10-minute run timeout.
+- Every call passes `max_total_charge_usd` to apify-client's `call()`. Examples 03, 06, 08 and 09 also set a 10-minute run timeout.
 
 The Actors use pay-per-event pricing, so they charge only their own events (for example a start fee and a price per row). Platform compute is not billed on top.
 
