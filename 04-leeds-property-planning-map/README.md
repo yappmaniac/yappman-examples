@@ -1,6 +1,6 @@
 # 04 Leeds property listings with planning data, mapped
 
-Searches Rightmove and Zoopla for homes for sale in Leeds. Each listing comes back with planning constraints from the government's planning data service at its coordinates (England only) and planning applications within 150 metres from the last year. The notebook maps every listing and colours it by what was found.
+Searches Rightmove and OnTheMarket for homes for sale in Leeds. Each listing comes back with planning constraints from the government's planning data service at its coordinates (England only) and planning applications within 150 metres from the last year. The notebook maps every listing and colours it by what was found. Zoopla is currently unavailable, so it is not searched.
 
 - Actor: [UK Property Listings + Planning](https://apify.com/yappman/uk-property-listings) (`yappman/uk-property-listings`)
 - Data: https://data.yappman.com
@@ -15,7 +15,7 @@ Searches Rightmove and Zoopla for homes for sale in Leeds. Each listing comes ba
 ```json
 {
   "mode": "search",
-  "portals": ["rightmove", "zoopla"],
+  "portals": ["rightmove", "onthemarket"],
   "locations": ["Leeds"],
   "listingType": "for-sale",
   "maxItems": 20,
