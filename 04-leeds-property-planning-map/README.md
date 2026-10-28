@@ -26,17 +26,17 @@ Searches Rightmove and Zoopla for homes for sale in Leeds. Each listing comes ba
 }
 ```
 
-`maxItems` is shared across both portals. The run passes `max_total_charge_usd=0.37`.
+`maxItems` is shared across both portals. The run passes `max_total_charge_usd=0.34`.
 
 ## Cost (Free tier)
 
 | Event | Count | Unit price | Most |
 |---|---|---|---|
-| Listing | 20 | $0.003 | $0.06 |
+| Listing | 20 | $0.00125 | $0.025 |
 | Planning constraints | 20 | $0.005 | $0.10 |
 | Planning applications | 20 | $0.01 | $0.20 |
 | Run start | 1 | $0.005 | $0.005 |
-| Total | | | $0.365 |
+| Total | | | $0.33 |
 
 Constraints are charged only when the lookup succeeds. Applications are not charged for areas PlanIt does not cover.
 

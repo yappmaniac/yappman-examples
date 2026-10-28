@@ -8,13 +8,13 @@ Worked examples, written as Python notebooks, for yappman's Apify Actors. Each n
 |---|---|---|---|
 | [01-uk-grocery-cheapest](01-uk-grocery-cheapest) | Finds the cheapest effective price for each product across Tesco, Sainsbury's, Asda, Aldi and Morrisons (opt-in) | UK Grocery Prices: Tesco, Sainsbury's, Asda, Aldi | $0.255 |
 | [02-uk-basket-price-history](02-uk-basket-price-history) | Builds a 30-day price history and a chained index from the free basket dataset (intended daily; gaps are listed) | None (public dataset) | $0.00 |
-| [03-au-aldi-prices-special-buys](03-au-aldi-prices-special-buys) | Searches Aldi Australia for a product and lists this week's Aldi Special Buys | Aldi Australia Price Scraper: Shelf Prices & Special Buys | $0.15 |
-| [04-leeds-property-planning-map](04-leeds-property-planning-map) | Maps Leeds listings coloured by planning constraints and nearby applications | UK Property Listings + Planning | $0.365 |
+| [03-au-aldi-prices-special-buys](03-au-aldi-prices-special-buys) | Searches Aldi Australia for a product and lists this week's Aldi Special Buys | Aldi Australia Price Scraper: Shelf Prices & Special Buys | $0.115 |
+| [04-leeds-property-planning-map](04-leeds-property-planning-map) | Maps Leeds listings coloured by planning constraints and nearby applications | UK Property Listings + Planning | $0.33 |
 | [05-lisbon-hotel-rates](05-lisbon-hotel-rates) | Compares vendor rates for Lisbon hotels and reads the hotels the Actor tracks, using tracked mode | Hotel Prices from Google Hotels: Vendor Rates, History | $0.0775 (plus $0.055 optional history, off by default) |
 | [06-uk-public-contracts](06-uk-public-contracts) | Lists the newest UK public procurement notices from Find a Tender and Contracts Finder, then reads the run summary | UK Contracts Finder and Find a Tender Scraper: Gov Contracts | $0.105 |
 | [08-lei-lookup](08-lei-lookup) | Looks up one Legal Entity Identifier in the Global LEI Index | LEI Lookup: Legal Entity Identifier Search by Name or Status | $0.001 |
 
-All seven listed examples together cost about $0.96 at most. Apify's Free plan includes monthly platform credit that covers this.
+All seven listed examples together cost about $0.88 at most. Apify's Free plan includes monthly platform credit that covers this.
 
 ## Actors and data
 

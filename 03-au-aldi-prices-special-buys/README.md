@@ -33,17 +33,17 @@ Run 2, Special Buys. `specialBuysDrops` is the seven dates of the current Sydney
 }
 ```
 
-The search run passes `max_total_charge_usd=0.03` and the Special Buys run passes `max_total_charge_usd=0.13`. Both have a run timeout of 10 minutes.
+The search run passes `max_total_charge_usd=0.025` and the Special Buys run passes `max_total_charge_usd=0.10`. Both have a run timeout of 10 minutes.
 
 ## Cost (Free tier)
 
 | Run | Event | Count | Unit price | Most |
 |---|---|---|---|---|
-| Search | Product row | 10 | $0.002 | $0.02 |
+| Search | Product row | 10 | $0.0015 | $0.015 |
 | Search | Actor start | 1 | $0.005 | $0.005 |
-| Special Buys | Product row | 60 | $0.002 | $0.12 |
+| Special Buys | Product row | 60 | $0.0015 | $0.09 |
 | Special Buys | Actor start | 1 | $0.005 | $0.005 |
-| Total | | | | $0.15 |
+| Total | | | | $0.115 |
 
 ## How the analysis works
 
