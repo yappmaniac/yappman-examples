@@ -1,6 +1,6 @@
 # yappman examples
 
-Worked examples, written as Python notebooks, for yappman's Apify Actors. Each notebook runs an Actor (or reads a public dataset) and analyses the result with pandas. Examples 01 to 05, 09 and 12 write their output to a local `output/` folder. Examples 06 and 08 show their results in the notebook only. Every paid run has a hard spend cap.
+Worked examples, written as Python notebooks, for yappman's Apify Actors. Each notebook runs an Actor (or reads a public dataset) and analyses the result with pandas. Examples 01 to 05, 09, 12 and 13 write their output to a local `output/` folder. Examples 06 and 08 show their results in the notebook only. Every paid run has a hard spend cap.
 
 ## Examples
 
@@ -15,8 +15,9 @@ Worked examples, written as Python notebooks, for yappman's Apify Actors. Each n
 | [08-lei-lookup](08-lei-lookup) | Looks up one Legal Entity Identifier in the Global LEI Index | LEI Lookup: Legal Entity Identifier Search by Name or Status | $0.001 |
 | [09-hotel-price-history](09-hotel-price-history) | Reads the stored lead-price snapshots for Lisbon hotels and plots price per night over time | Hotel Prices from Google Hotels: Vendor Rates, History | $0.06 |
 | [12-eu-aldi-nl-de-prices](12-eu-aldi-nl-de-prices) | Reads one category page at Aldi Netherlands and one at Aldi Nord Germany and sorts each shop by its own unit price | Aldi Netherlands & Germany Price Scraper: Shelf Prices (EUR) | $0.05 |
+| [13-cricos-register](13-cricos-register) | Searches the CRICOS register of Australian education providers and looks up two by provider code | CRICOS Register Lookup (Australia) | $0.024 |
 
-All nine listed examples together cost about $0.99 at most. Apify's Free plan includes monthly platform credit that covers this.
+All ten listed examples together cost about $1.02 at most. Apify's Free plan includes monthly platform credit that covers this.
 
 ## Actors and data
 
@@ -25,6 +26,7 @@ All nine listed examples together cost about $0.99 at most. Apify's Free plan in
 | UK Grocery Prices: Tesco, Sainsbury's, Asda, Aldi | https://apify.com/yappman/uk-supermarket-price-scraper |
 | Aldi Australia Price Scraper: Shelf Prices & Special Buys | https://apify.com/yappman/au-supermarket-price-scraper |
 | Aldi Netherlands & Germany Price Scraper: Shelf Prices (EUR) | https://apify.com/yappman/nl-de-supermarket-price-scraper |
+| CRICOS Register Lookup (Australia) | https://apify.com/yappman/cricos-register |
 | Rightmove & OnTheMarket UK Property Listings + Sold Prices | https://apify.com/yappman/uk-property-listings |
 | Hotel Prices from Google Hotels: Vendor Rates, History | https://apify.com/yappman/google-hotels-prices |
 | UK Contracts Finder and Find a Tender Scraper: Gov Contracts | https://apify.com/yappman/contracts-lookup |
@@ -63,8 +65,8 @@ jupyter lab
 
 Every paid run is capped in two ways:
 
-- Examples 01, 03, 04, 05, 06 and 12 set `maxItems` in the Actor input. Example 08 has no `maxItems` in the mode it uses, so the length of the input list is the cap.
-- Every call passes `max_total_charge_usd` to apify-client's `call()`. Examples 03, 06, 08, 09 and 12 also set a 10-minute run timeout.
+- Examples 01, 03, 04, 05, 06, 12 and 13 set `maxItems` in the Actor input. Example 08 has no `maxItems` in the mode it uses, so the length of the input list is the cap.
+- Every call passes `max_total_charge_usd` to apify-client's `call()`. Examples 03, 06, 08, 09, 12 and 13 also set a 10-minute run timeout.
 
 The Actors use pay-per-event pricing, so they charge only their own events (for example a start fee and a price per row). Platform compute is not billed on top.
 
@@ -78,7 +80,7 @@ Prices quoted in these READMEs are Free-tier event prices as of October 2026. Pa
 - No collected data.
 - No retailer or portal logos.
 
-Notebooks are committed without outputs. Examples 01 to 05, 09 and 12 write what they collect to `output/`, which git ignores. Examples 06 and 08 keep it in the notebook only. Run `python scripts/check_repo.py` before committing. CI runs it too.
+Notebooks are committed without outputs. Examples 01 to 05, 09, 12 and 13 write what they collect to `output/`, which git ignores. Examples 06 and 08 keep it in the notebook only. Run `python scripts/check_repo.py` before committing. CI runs it too.
 
 ## Upcoming Actor changes
 
