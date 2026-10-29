@@ -10,6 +10,7 @@ Run the scripts from this folder, because the LEI and Trade Info scripts import 
 |---|---|---|
 | `make_contracts_demo.py --data run.json --out <folder>` | run record JSON with `rows`, `run_id`, `started`, `finished`, `usage`, `events` (the Contracts Lookup run) | `contracts-lookup-demo.mp4`, silent |
 | `make_lei_demo.py --data run.json --out <folder>` | the same JSON shape for an LEI Lookup run | `lei-lookup-demo.mp4`, silent |
+| `make_cricos_demo.py --data run.json --out <folder>` | a JSON with a `search` and a `lookup` run record (`run_id`, `started`, `finished`, `usage`, `events`, `rows`, `summary`) | `cricos-register-demo-silent.mp4`; provider names, postcodes and cities are never drawn |
 | `make_trade_demo.py --csv sample.csv --out <folder>` | a saved 20-row sample CSV with the company-name column | `uk-importers-exporters-demo-silent.mp4`, names blurred |
 | `add_music.py <video> <track.mp3> <out.mp4>` | a finished video and a track | the video with the music bed |
 
