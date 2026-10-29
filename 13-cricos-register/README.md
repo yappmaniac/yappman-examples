@@ -1,6 +1,6 @@
 # 13 Australian education providers (CRICOS)
 
-Two runs: a search of the CRICOS register for providers in New South Wales (10 rows), then a lookup of two of those providers by provider code. The notebook compares each provider's registered and active course counts.
+Two runs: a search of the CRICOS register for providers in New South Wales (10 rows), then a lookup of two of those providers by provider code.
 
 - Actor: [CRICOS Register Lookup (Australia)](https://apify.com/yappman/cricos-register) (`yappman/cricos-register`)
 - Data: https://data.yappman.com
